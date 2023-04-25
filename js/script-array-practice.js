@@ -98,16 +98,44 @@
 
 
 //STEP 14
-let employees = ['zak','jessica','mark','fred','sally']
-function showEmployee(name) {
-    for (let i = 0; i < employees.length; i++) {
-        console.log(`${employees[i]}`)
-    }
-}
-showEmployee()
+// let employees = ['zak','jessica','mark','fred','sally']
+// function showEmployee(name) {
+//     for (let i = 0; i < employees.length; i++) {
+//         console.log(`${employees[i]}`)
+//     }
+// }
+// showEmployee()
+
 
 //STEP 15
+// let randomStuff = [58, '', 'abcd', true, null, false, 0]
+// let randomFilter = randomStuff.filter((item) => {
+//     return item === 58 || item === true || item === 'abcd'
+// })
+// console.log(randomFilter)
+
 
 //STEP 16
+// let nums = [1, 2, 99.8, 4, 5, 6, 7, 8, 9 ,100]
+// function getRandomNum(nums) {
+//     for (let i = 0; i < nums.length; i++) {
+//         newNum = Math.floor(Math.random() * 10)
+//     }
+//     console.log(`${nums[newNum]}`)  
+// }
+// getRandomNum(nums)
+
 
 //STEP 17
+let nums = [1, 2, 99.8, 4, 5, 6, 7, 800, 9 ,100]
+let largest = nums[0]
+
+function largeNum (nums) {
+    for (let i = 0; i < nums.length; i++) {
+        if (largest < nums[i]) {
+            largest = nums[i] 
+        }
+    }
+    console.log(largest)
+}
+largeNum(nums)
